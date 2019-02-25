@@ -153,3 +153,502 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 99ms (Views: 98.0ms)
 
 
+Started GET "/signup" for 127.0.0.1 at 2019-02-23 11:05:19 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_rails_default.html.erb (6503.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (4.2ms)
+Completed 200 OK in 8823ms (Views: 6768.5ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-02-23 11:05:42 +0100
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_rails_default.html.erb (147.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 191ms (Views: 170.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-23 11:05:57 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_rails_default.html.erb (89.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 297ms (Views: 117.6ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-02-23 11:19:56 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 1798ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class User with id(s) 1.
+summary:
+  When calling User.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 1 ... (1 total) and the following ids were not found: 1.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2019-02-23 12:57:14 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 1448ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class User with id(s) 1.
+summary:
+  When calling User.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 1 ... (1 total) and the following ids were not found: 1.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/" for 127.0.0.1 at 2019-02-25 11:16:39 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8148.4ms)
+  Rendered layouts/_rails_default.html.erb (874.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 13616ms (Views: 9273.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-02-25 11:17:43 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 60132ms
+
+
+  
+Mongo::Error::NoServerAvailable (No primary server is available in cluster: #<Cluster topology=Unknown[localhost:27017] servers=[]> with timeout=30, LT=0.015):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 11:20:23 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_rails_default.html.erb (272.1ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 1008ms (Views: 732.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2019-02-25 11:21:17 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 30219ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class User with id(s) 1.
+summary:
+  When calling User.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 1 ... (1 total) and the following ids were not found: 1.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2019-02-25 11:22:03 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 9ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class User with id(s) 1.
+summary:
+  When calling User.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 1 ... (1 total) and the following ids were not found: 1.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/1" for 127.0.0.1 at 2019-02-25 11:22:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 404 Not Found in 10ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class User with id(s) 1.
+summary:
+  When calling User.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 1 ... (1 total) and the following ids were not found: 1.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/" for 127.0.0.1 at 2019-02-25 11:25:59 +0100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-02-25 11:26:05 +0100
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-25 11:31:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Completed 404 Not Found in 2092ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document(s) not found for class User with id(s) 5.
+summary:
+  When calling User.find with an id or array of ids, each parameter must match a document in the database or this error will be raised. The search was for the id(s): 5 ... (1 total) and the following ids were not found: 5.
+resolution:
+  Search for an id that is in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error when searching for a single id, or only the matched documents when searching for multiples.):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-25 11:33:25 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_rails_default.html.erb (1555.7ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 2117ms (Views: 1886.1ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-25 11:44:56 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (57.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 72.9ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-25 11:45:03 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_rails_default.html.erb (53.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 73.7ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-25 12:04:01 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_rails_default.html.erb (59.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 142ms (Views: 87.5ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-25 12:12:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_rails_default.html.erb (18445.6ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 18721ms (Views: 18652.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 12:30:25 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (748.3ms)
+  Rendered layouts/_rails_default.html.erb (2226.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 3096ms (Views: 3000.8ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 12:31:01 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_rails_default.html.erb (80.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 119ms (Views: 116.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-25 16:18:40 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (22089.5ms)
+  Rendered layouts/_rails_default.html.erb (1169.9ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 29884ms (Views: 23792.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 16:21:26 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2632.1ms)
+  Rendered layouts/_rails_default.html.erb (48.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 2897ms (Views: 2707.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 16:30:03 +0100
+  
+SyntaxError (/home/ajf97/Escritorio/Twitter-Feed/app/controllers/users_controller.rb:28: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/users_controller.rb:28: syntax error, unexpected end, expecting end-of-input
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 16:33:52 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered users/new.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_rails_default.html.erb (9118.9ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 9356ms (Views: 9292.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 16:34:18 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_rails_default.html.erb (50.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 160ms (Views: 159.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 17:01:06 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.9ms)
+  Rendered users/new.html.erb within layouts/application (2487.5ms)
+  Rendered layouts/_rails_default.html.erb (2759.3ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 8104ms (Views: 5469.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-25 17:01:33 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i65btOZBFmsfsVn3hs8J6779NIJAxnVsdxQ9ZoB4HYd2ZhkidfeeIDO+kUf1iLMVeBrMqcrtIJSfTU6x688Oaw==", "user"=>{"name"=>"askj", "email"=>"asdfjasdf@invalid.comcc", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (5.0ms)
+  Rendered users/new.html.erb within layouts/application (19.4ms)
+  Rendered layouts/_rails_default.html.erb (72.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 241ms (Views: 112.9ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 17:48:15 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (2740.5ms)
+  Rendered layouts/_rails_default.html.erb (2975.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 9348ms (Views: 5943.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-25 17:49:32 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NIQpHj5mM51JAmhhh15ouAUqu3+rvGbxxFt+KyMK8QRxSCBZtuvK2YLVwy5zHwR7s2fa611Z4hXHmUbqFOTVdw==", "user"=>{"name"=>"Foo bar ", "email"=>"foo@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 60137ms
+
+
+  
+Mongo::Error::NoServerAvailable (No primary server is available in cluster: #<Cluster topology=Unknown[localhost:27017] servers=[]> with timeout=30, LT=0.015):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started POST "/users" for 127.0.0.1 at 2019-02-25 17:51:14 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NIQpHj5mM51JAmhhh15ouAUqu3+rvGbxxFt+KyMK8QRxSCBZtuvK2YLVwy5zHwR7s2fa611Z4hXHmUbqFOTVdw==", "user"=>{"name"=>"Foo bar ", "email"=>"foo@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Completed 500 Internal Server Error in 60004ms
+
+
+  
+Mongo::Error::NoServerAvailable (No primary server is available in cluster: #<Cluster topology=Unknown[localhost:27017] servers=[]> with timeout=30, LT=0.015):
+  
+app/controllers/users_controller.rb:14:in `create'
+Started GET "/signup" for 127.0.0.1 at 2019-02-25 17:57:38 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_rails_default.html.erb (30.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 53.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-25 17:57:50 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8iyGfwca/4UpVaPGtwhiypqkh2+9jNGenvkTzj1N26+34I84j5cGweKCCIlDSQ4JLOnm+0tpVXqdOysPCqP/3A==", "user"=>{"name"=>"Foo bar", "email"=>"foo@invalid", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (2.4ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_rails_default.html.erb (23.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 2428ms (Views: 38.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-25 18:44:15 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8iyGfwca/4UpVaPGtwhiypqkh2+9jNGenvkTzj1N26+34I84j5cGweKCCIlDSQ4JLOnm+0tpVXqdOysPCqP/3A==", "user"=>{"name"=>"Pepe", "email"=>"pepe@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+Redirected to http://localhost:3000/users/5c74297039c97e08f76db2a4
+Completed 302 Found in 542ms
+
+
+Started GET "/users/5c74297039c97e08f76db2a4" for 127.0.0.1 at 2019-02-25 18:44:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c74297039c97e08f76db2a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (42.9ms)
+  Rendered layouts/_shim.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 54.4ms)
+
+
