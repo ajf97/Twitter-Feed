@@ -652,3 +652,584 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 61ms (Views: 54.4ms)
 
 
+Started GET "/login" for 127.0.0.1 at 2019-02-26 11:28:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2019-02-26 11:33:00 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2019-02-26 11:33:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2019-02-26 11:33:45 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (180.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 198ms (Views: 196.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-26 11:34:03 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_rails_default.html.erb (54.4ms)
+  Rendered layouts/_shim.html.erb (1.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 85ms (Views: 73.8ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-02-26 11:34:05 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (47.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 227ms (Views: 55.7ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-02-26 11:34:09 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_rails_default.html.erb (33.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 39.1ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-02-26 11:34:11 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (32.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (3.4ms)
+Completed 200 OK in 44ms (Views: 43.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-02-26 11:34:11 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_rails_default.html.erb (25.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 43ms (Views: 42.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-26 11:34:17 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (35.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 46ms (Views: 45.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-26 13:36:23 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G+1GINvtfm0QOn2VQHQl1nZEzDUYgp5Cs2yRniO0RW5eIU9nU2CHKdvt1tq0NUkVwAmtoe5nGqawrqlfFFphHQ==", "session"=>{"email"=>"akfjalsdf@invalid", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 404 Not Found in 10ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:email=>"akfjalsdf@invalid"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started POST "/login" for 127.0.0.1 at 2019-02-26 13:37:52 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G+1GINvtfm0QOn2VQHQl1nZEzDUYgp5Cs2yRniO0RW5eIU9nU2CHKdvt1tq0NUkVwAmtoe5nGqawrqlfFFphHQ==", "session"=>{"email"=>"akfjalsdf@invalid", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 404 Not Found in 6ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:email=>"akfjalsdf@invalid"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started POST "/login" for 127.0.0.1 at 2019-02-26 13:37:55 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G+1GINvtfm0QOn2VQHQl1nZEzDUYgp5Cs2yRniO0RW5eIU9nU2CHKdvt1tq0NUkVwAmtoe5nGqawrqlfFFphHQ==", "session"=>{"email"=>"akfjalsdf@invalid", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 404 Not Found in 2ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:email=>"akfjalsdf@invalid"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started POST "/login" for 127.0.0.1 at 2019-02-26 13:39:38 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G+1GINvtfm0QOn2VQHQl1nZEzDUYgp5Cs2yRniO0RW5eIU9nU2CHKdvt1tq0NUkVwAmtoe5nGqawrqlfFFphHQ==", "session"=>{"email"=>"akfjalsdf@invalid", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 404 Not Found in 515ms
+
+
+  
+Mongoid::Errors::DocumentNotFound (
+message:
+  Document not found for class User with attributes {:email=>"akfjalsdf@invalid"}.
+summary:
+  When calling User.find_by with a hash of attributes, all attributes provided must match a document in the database or this error will be raised.
+resolution:
+  Search for attributes that are in the database or set the Mongoid.raise_not_found_error configuration option to false, which will cause a nil to be returned instead of raising this error.):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started GET "/login" for 127.0.0.1 at 2019-02-26 13:40:16 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (509.0ms)
+  Rendered layouts/_rails_default.html.erb (304.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1104ms (Views: 821.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-26 13:40:25 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"81M1fsHEffP0VjEsMb1orySMekP3Z24IHleHhdw0uxq2nzw5SUmEtz+BmmPF/ARsksEb1wGC6uwdlb9E69qfaQ==", "session"=>{"email"=>"akfjalsdf@invalid", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (38.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 79ms (Views: 49.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-26 13:40:32 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_rails_default.html.erb (76.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 95ms (Views: 94.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 10:25:11 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (34.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (154.8ms)
+Completed 500 Internal Server Error in 197ms
+
+
+  
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0x00007f5da03e6958>:0x00007f5da03e4db0>
+Did you mean?  logged_in):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020114536940'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020048579980'
+Started GET "/" for 127.0.0.1 at 2019-02-27 10:31:39 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (189.3ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (183.2ms)
+Completed 500 Internal Server Error in 381ms
+
+
+  
+ActionView::Template::Error (undefined method `logged_in?' for #<#<Class:0x00007f5da03e6958>:0x00007f5dac8e4c78>
+Did you mean?  logged_in):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020165735560'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020152320080'
+Started GET "/" for 127.0.0.1 at 2019-02-27 10:31:54 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (31.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 42ms (Views: 40.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-27 10:31:58 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (66.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 92ms (Views: 88.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-27 10:32:11 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f0iSTiQGkfxs98kMTtVcBDVzo9B2KfsH2crnZIBpy3QsFAcwArUb4zWLV6D1RhtJGL8UsOT5btcTnegD5hlhRA==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 85ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 10:32:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_rails_default.html.erb (96.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (271.1ms)
+Completed 500 Internal Server Error in 548ms
+
+
+  
+ActionView::Template::Error (unknown operator: $oid (2)):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:11:in `current_user'
+app/helpers/sessions_helper.rb:18:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020152673260'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020048684980'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 10:36:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_rails_default.html.erb (50.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+Completed 500 Internal Server Error in 73ms
+
+
+  
+ActionView::Template::Error (unknown operator: $oid (2)):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:11:in `current_user'
+app/helpers/sessions_helper.rb:18:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020159100300'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020117111880'
+Started POST "/login" for 127.0.0.1 at 2019-02-27 10:36:45 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f0iSTiQGkfxs98kMTtVcBDVzo9B2KfsH2crnZIBpy3QsFAcwArUb4zWLV6D1RhtJGL8UsOT5btcTnegD5hlhRA==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 78ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 10:36:45 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (46.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+Completed 500 Internal Server Error in 62ms
+
+
+  
+ActionView::Template::Error (unknown operator: $oid (2)):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:11:in `current_user'
+app/helpers/sessions_helper.rb:18:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020158999240'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020115994960'
+Started POST "/login" for 127.0.0.1 at 2019-02-27 10:36:52 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f0iSTiQGkfxs98kMTtVcBDVzo9B2KfsH2crnZIBpy3QsFAcwArUb4zWLV6D1RhtJGL8UsOT5btcTnegD5hlhRA==", "session"=>{"email"=>"ajf97@example.comaa", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_rails_default.html.erb (53.0ms)
+  Rendered layouts/_shim.html.erb (2.9ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+Completed 500 Internal Server Error in 72ms
+
+
+  
+ActionView::Template::Error (unknown operator: $oid (2)):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:11:in `current_user'
+app/helpers/sessions_helper.rb:18:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020158954840'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020115219200'
+app/controllers/sessions_controller.rb:18:in `create'
+Started PUT "/__web_console/repl_sessions/92d1d63b35d60a5312586ed64c8c36d0" for 127.0.0.1 at 2019-02-27 10:42:30 +0100
+Started PUT "/__web_console/repl_sessions/92d1d63b35d60a5312586ed64c8c36d0" for 127.0.0.1 at 2019-02-27 10:42:35 +0100
+Started PUT "/__web_console/repl_sessions/92d1d63b35d60a5312586ed64c8c36d0" for 127.0.0.1 at 2019-02-27 10:42:40 +0100
+Started POST "/login" for 127.0.0.1 at 2019-02-27 10:45:07 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f0iSTiQGkfxs98kMTtVcBDVzo9B2KfsH2crnZIBpy3QsFAcwArUb4zWLV6D1RhtJGL8UsOT5btcTnegD5hlhRA==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 86ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 10:45:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (28.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 41ms (Views: 38.2ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 10:45:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_rails_default.html.erb (39.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 60ms (Views: 57.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 10:45:35 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_rails_default.html.erb (70.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 98ms (Views: 96.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-27 10:45:55 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Sfsps3E/SS92VW9uZJUateULT5OYbPR4gb8okswda2sMNyD0+bKwa72CxCGQ1HZ2U0YuB26JcJyCfRBT+/NPGA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 11ms
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-27 10:45:58 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Sfsps3E/SS92VW9uZJUateULT5OYbPR4gb8okswda2sMNyD0+bKwa72CxCGQ1HZ2U0YuB26JcJyCfRBT+/NPGA=="}
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 15ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 10:46:28 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_rails_default.html.erb (63.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 83ms (Views: 82.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-27 10:46:31 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_rails_default.html.erb (27.9ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 51ms (Views: 49.6ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-27 10:46:45 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GAGBxzd/rUBYEsX+U0PavYWLLD12Xmpw+km71uDt7LWM5uYygCN+FLM3GjKHV1pl+ojRJHciI1oofMwsYEUWQQ==", "session"=>{"email"=>"akfjalsdf@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (29.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 38.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-27 11:30:55 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oWk0wzTEW5AlemUaBF54tGJ1rokVZgUcuWj3B3L9s9TOaWSd8OaDi6ekv7CFP8RkfY975w90HIutTaU2twmyYw==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 79ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 11:30:55 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (49.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 65.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-27 11:30:59 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uXOg9aqSCLJc89+xffOUiL6/KheX5D+OT7vUhPRr3gnWc/CrbrDQqd4tBRv8kihYoUX/eY32Jhlbnoa1MZ/fvg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 11:30:59 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_rails_default.html.erb (34.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 50ms (Views: 48.8ms)
+
+
