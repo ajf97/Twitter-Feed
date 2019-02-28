@@ -1233,3 +1233,2616 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 50ms (Views: 48.8ms)
 
 
+Started GET "/login" for 127.0.0.1 at 2019-02-27 14:11:10 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_rails_default.html.erb (42.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 58.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-27 14:11:18 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A7Zg+yxYSv0wpcM50zOv2LULdo0cjciB95y2QZOZTHGXUQcOmwSZqduAHPUHJy8AygiLlB3xgaslqcG7EzG2hQ==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Completed 500 Internal Server Error in 4ms
+
+
+  
+SyntaxError (/home/ajf97/Escritorio/Twitter-Feed/app/models/user.rb:70: syntax error, unexpected end, expecting end-of-input):
+  
+app/models/user.rb:70: syntax error, unexpected end, expecting end-of-input
+app/controllers/sessions_controller.rb:9:in `create'
+Started POST "/login" for 127.0.0.1 at 2019-02-27 14:12:53 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A7Zg+yxYSv0wpcM50zOv2LULdo0cjciB95y2QZOZTHGXUQcOmwSZqduAHPUHJy8AygiLlB3xgaslqcG7EzG2hQ==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 152ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 14:12:54 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_rails_default.html.erb (30.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+Completed 500 Internal Server Error in 45ms
+
+
+  
+ActionView::Template::Error (unknown operator: $oid (2)):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:11:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020162094900'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020157427160'
+Started PUT "/__web_console/repl_sessions/fb9b0a131e794ff758cfc4241d27aca4" for 127.0.0.1 at 2019-02-27 14:13:03 +0100
+Started PUT "/__web_console/repl_sessions/fb9b0a131e794ff758cfc4241d27aca4" for 127.0.0.1 at 2019-02-27 14:13:05 +0100
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 14:19:04 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_rails_default.html.erb (91.1ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (7.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 139ms (Views: 114.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-27 14:41:44 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uWcwNm/O4tnoUMPvGyIe2j7knXq+7KcroniaB35U5KDWZ2Boq+w6wmqOGUWaQ6IKIR5IFKT+vry2Xcg2u6DlFw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 14:41:44 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (26.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 500 Internal Server Error in 35ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020167006860'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020162789380'
+Started GET "/" for 127.0.0.1 at 2019-02-27 14:41:54 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_rails_default.html.erb (27.0ms)
+  Rendered layouts/_shim.html.erb (3.0ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 500 Internal Server Error in 50ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020167465940'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020164137280'
+Started PUT "/__web_console/repl_sessions/6e6f7774f2e9181e2d7616710a786aae" for 127.0.0.1 at 2019-02-27 14:42:15 +0100
+Started PUT "/__web_console/repl_sessions/6e6f7774f2e9181e2d7616710a786aae" for 127.0.0.1 at 2019-02-27 14:42:16 +0100
+Started PUT "/__web_console/repl_sessions/6e6f7774f2e9181e2d7616710a786aae" for 127.0.0.1 at 2019-02-27 14:42:18 +0100
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:04:21 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (54.4ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+Completed 500 Internal Server Error in 66ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020162731420'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020114933460'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:04:23 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_rails_default.html.erb (43.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 500 Internal Server Error in 56ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020161271720'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_47312286276520'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:04:28 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_rails_default.html.erb (55.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 500 Internal Server Error in 65ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__1641740207507330345_70020160972440'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1415465206717569480_70020118163600'
+Started PUT "/__web_console/repl_sessions/24918c58d8e3f83ed9c1c15f07cc445d" for 127.0.0.1 at 2019-02-27 15:05:57 +0100
+Started PUT "/__web_console/repl_sessions/24918c58d8e3f83ed9c1c15f07cc445d" for 127.0.0.1 at 2019-02-27 15:06:00 +0100
+Started PUT "/__web_console/repl_sessions/24918c58d8e3f83ed9c1c15f07cc445d" for 127.0.0.1 at 2019-02-27 15:06:01 +0100
+Started PUT "/__web_console/repl_sessions/24918c58d8e3f83ed9c1c15f07cc445d" for 127.0.0.1 at 2019-02-27 15:06:02 +0100
+Started PUT "/__web_console/repl_sessions/24918c58d8e3f83ed9c1c15f07cc445d" for 127.0.0.1 at 2019-02-27 15:06:07 +0100
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:07:31 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (454.5ms)
+  Rendered layouts/_rails_default.html.erb (68.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (16.8ms)
+Completed 500 Internal Server Error in 939ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_69878298684020'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_47307564454020'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:08:32 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_rails_default.html.erb (38.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 64.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-27 15:08:39 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1520.5ms)
+  Rendered layouts/_rails_default.html.erb (52.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1588ms (Views: 1585.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-27 15:08:49 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zj5X2kQe4rmCukekeAt7xANqdzh8mYXul5egvpbOh7Xy2TAv80Ix7WmfmGisH/scfGmKIX3lzMRFotdEFmZ9QQ==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 209ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 15:08:49 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (46.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+Completed 500 Internal Server Error in 57ms
+
+
+  
+ActionView::Template::Error (unknown operator: $oid (2)):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:11:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_69878298991380'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_69878215545240'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 15:09:20 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (42.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 69ms (Views: 54.8ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-27 15:09:23 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YSkzlcoawiOxaafpnWgQmVStgREsT54yKEr5Kym34kwOKWPLDjgaODO3fUMcCaxJS1dUfzZdh6U8b6sa7EPj+w=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:09:23 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (38.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 500 Internal Server Error in 47ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_69878079314240'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_69878078047140'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:24:47 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (81.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+Completed 500 Internal Server Error in 95ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_69878292081560'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_69878297738500'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:24:51 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_rails_default.html.erb (40.5ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+Completed 500 Internal Server Error in 57ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_69878079601440'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_69878078273060'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:26:40 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_rails_default.html.erb (86.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+Completed 500 Internal Server Error in 100ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_69878284767580'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_69878379801740'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:26:42 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_rails_default.html.erb (55.7ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+Completed 500 Internal Server Error in 71ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_69878079203340'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_69878213216300'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:26:44 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_rails_default.html.erb (68.4ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+Completed 500 Internal Server Error in 83ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_69878293517700'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_69878044182740'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:26:45 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_rails_default.html.erb (55.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+Completed 500 Internal Server Error in 72ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_69878078565460'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_69878312647580'
+Started GET "/" for 127.0.0.1 at 2019-02-27 15:26:47 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_rails_default.html.erb (60.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+Completed 500 Internal Server Error in 75ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb__4295712083983848749_47307576929860'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___4105361963428566232_69878083670440'
+Started GET "/" for 127.0.0.1 at 2019-02-27 16:41:13 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2274.6ms)
+  Rendered layouts/_rails_default.html.erb (104.2ms)
+  Rendered layouts/_shim.html.erb (2.1ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+Completed 500 Internal Server Error in 2626ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb___395201664469959793_69903198068900'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3406173466753898141_47298017586260'
+Started GET "/" for 127.0.0.1 at 2019-02-27 16:41:18 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (31.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+Completed 500 Internal Server Error in 41ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb___395201664469959793_69903192802260'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3406173466753898141_69903191018480'
+Started GET "/" for 127.0.0.1 at 2019-02-27 16:41:19 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (57.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 500 Internal Server Error in 67ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb___395201664469959793_69903197231980'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__3406173466753898141_69903191969980'
+Started GET "/" for 127.0.0.1 at 2019-02-27 16:43:45 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (306.7ms)
+  Rendered layouts/_rails_default.html.erb (92.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (9.1ms)
+Completed 500 Internal Server Error in 686ms
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:10:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb___3377798076048170142_70248403048080'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1152849724929728535_47331924512200'
+Started GET "/" for 127.0.0.1 at 2019-02-27 16:44:10 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_rails_default.html.erb (43.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (7.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 60.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-27 16:44:15 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (578.4ms)
+  Rendered layouts/_rails_default.html.erb (32.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 620ms (Views: 619.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-27 16:44:26 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6MyQ60hY/v4JLO6A0zslGa4hJFWGrtkPiltZVzC1JuF8K/ce/wQtquIJMUwHL6XB0SLZTIfSkCVYbi6tsB3cFQ==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 271ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 16:44:26 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_rails_default.html.erb (69.5ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+Completed 500 Internal Server Error in 83ms
+
+
+  
+ActionView::Template::Error (unknown operator: $oid (2)):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:11:in `current_user'
+app/helpers/sessions_helper.rb:24:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb___3377798076048170142_70248397274080'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1152849724929728535_70248406458600'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 16:46:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (45.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (6.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 86ms (Views: 65.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 16:46:53 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_rails_default.html.erb (56.6ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (7.1ms)
+Completed 500 Internal Server Error in 73ms
+
+
+  
+ActionView::Template::Error (unknown operator: $oid (2)):
+     5:       <ul class="nav navbar-nav navbar-right">
+     6:         <li><%= link_to "Home", root_path %></li>
+     7:         <li><%= link_to "Help", help_path %></li>
+     8:         <% if logged_in? %>
+     9:           <li><%= link_to "Users", '#' %></li>
+    10:           <li class="dropdown">
+    11:             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  
+app/helpers/sessions_helper.rb:14:in `current_user'
+app/helpers/sessions_helper.rb:25:in `logged_in?'
+app/views/layouts/_header.html.erb:8:in `_app_views_layouts__header_html_erb___3377798076048170142_70248184547300'
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1152849724929728535_70248183272380'
+Started PUT "/__web_console/repl_sessions/bdd22fff7100ec499666be813ce8f41d" for 127.0.0.1 at 2019-02-27 16:47:11 +0100
+Started PUT "/__web_console/repl_sessions/bdd22fff7100ec499666be813ce8f41d" for 127.0.0.1 at 2019-02-27 16:47:13 +0100
+Started GET "/" for 127.0.0.1 at 2019-02-27 17:09:48 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_rails_default.html.erb (47.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (97.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 162ms (Views: 161.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 17:09:53 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (51.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 63.2ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-27 17:09:56 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tJmIFmRO3yJ2Y0vHkHtw6kY76/Zrc2kvj2oXV8BIDIsTWUKRnpgrJkItJEA7pRPjlPci+uKCq8p0aUE/aHgxrQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 17:09:56 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_rails_default.html.erb (65.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 78ms (Views: 76.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-27 17:21:31 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_rails_default.html.erb (62.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 80ms (Views: 79.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-27 17:22:07 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IgfJLZVCPsjUPJYWGdhQLMA2IMUjWReBYzqVL6xMr+WqQZMXfBV43Rl6QFNWGleBwOv+34WGfRy5fz/HWogeSw==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 88ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 17:22:07 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (29.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 38.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 17:22:19 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_rails_default.html.erb (62.1ms)
+  Rendered layouts/_shim.html.erb (3.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 80ms (Views: 79.5ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 17:22:30 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (50.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (36.6ms)
+Completed 200 OK in 104ms (Views: 100.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-27 17:22:34 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (60.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 74.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-27 17:22:37 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_rails_default.html.erb (67.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 85ms (Views: 83.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-27 17:26:58 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uAaoHUJzpwDyr3NwG/00fwv+wf8ABY0EX7xCjVQh2ZDoWERw4E/vjwg4BdPO9okfz1ShFlirYXDDDkpkSmNQpA==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 172ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 17:26:59 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (64.2ms)
+  Rendered layouts/_shim.html.erb (2.5ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 91ms (Views: 87.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 17:27:12 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_rails_default.html.erb (54.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (90.6ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 157ms (Views: 156.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 20:43:21 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_rails_default.html.erb (56.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (12.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 82ms (Views: 81.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-02-27 20:43:28 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_rails_default.html.erb (53.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 64.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 20:43:29 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_rails_default.html.erb (105.1ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (5.2ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 129ms (Views: 128.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 20:43:30 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_rails_default.html.erb (68.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (11.5ms)
+  Rendered layouts/_footer.html.erb (2.8ms)
+Completed 200 OK in 98ms (Views: 97.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-27 20:43:32 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kaUcLYOc/FyvT8QSkl4yKqDItGXVtHQa5+9OzP8GPb8TwpSknRUVPfXjgYQknNENDGgQuTQHoidc44dTf8Sveg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-27 20:43:32 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (44.0ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 52.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-27 20:43:34 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_rails_default.html.erb (148.3ms)
+  Rendered layouts/_shim.html.erb (4.1ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 192ms (Views: 185.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-27 20:43:41 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YvdJItQ03vFmWd8EDvC3Vpp7+biRACTxtQAe66RZ3xQfoVzC/ITYoDgzf5Z3hUKzD9R/S6auxb2xMj7axvquCQ==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 105ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-27 20:43:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (45.4ms)
+  Rendered layouts/_shim.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 60.1ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-27 20:43:52 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 20ms
+
+
+  
+ActionView::Template::Error (Missing partial users/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ajf97/Escritorio/Twitter-Feed/app/views"
+):
+    3: <h1>Update your profile</h1>
+    4: <div class="row">
+    5:   <div class="col-md-6 col-md-offset-3">
+    6:     <%= render 'form' %>
+    7:     <div class="gravatar_edit">
+    8:       <%= gravatar_for @user %>
+    9:       <a href="http://gravatar.com/emails" target="_blank">Change</a>
+  
+app/views/users/edit.html.erb:6:in `_app_views_users_edit_html_erb__4432319748479274712_70248185771280'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 09:33:38 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (61.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (6.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 86ms (Views: 80.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 09:33:52 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_rails_default.html.erb (33.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 44.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 09:33:55 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (33.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 42.3ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 09:33:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_rails_default.html.erb (62.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 88ms (Views: 82.9ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 09:38:35 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_form.html.erb (6.2ms)
+  Rendered users/edit.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_rails_default.html.erb (47.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 86ms (Views: 82.8ms)
+
+
+Started PATCH "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 09:38:52 +0100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ExOWFkZuSNmWtIXRy2Dk43JszMhbQNuPj2EjSYUCHc77USUIXgV9tccL+ljO6H8YpPcjQhBAeX4YjJRFEDNwNw==", "user"=>{"name"=>"Alejandro", "email"=>"ajf97@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Guardar cambios", "id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered users/_form.html.erb (6.2ms)
+  Rendered users/edit.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_rails_default.html.erb (41.9ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 66.5ms)
+
+
+Started PATCH "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 09:39:12 +0100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m0b/RNBIQOY7EtEroG+liDxb54HUyRRlxEGg09ma+30ZIXfNzsGph2G+lL0WrUavkPtDXTV6wlh/TWlMWVhpuA==", "user"=>{"name"=>"Alejandro", "email"=>"ajf97@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Guardar cambios", "id"=>"5c6fd72239c97e1125c0fbe6"}
+No template found for UsersController#update, rendering head :no_content
+Completed 204 No Content in 95ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 09:39:28 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_rails_default.html.erb (41.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 56ms (Views: 53.5ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 09:39:32 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered users/_form.html.erb (5.4ms)
+  Rendered users/edit.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_rails_default.html.erb (71.2ms)
+  Rendered layouts/_shim.html.erb (1.8ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 98ms (Views: 95.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 09:39:38 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_form.html.erb (5.4ms)
+  Rendered users/edit.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_rails_default.html.erb (33.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 55ms (Views: 50.7ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 09:39:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (44.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (9.4ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 69ms (Views: 64.5ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 09:58:59 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+SyntaxError (/home/ajf97/Escritorio/Twitter-Feed/app/models/user.rb:15: syntax error, unexpected '\n', expecting =>):
+  
+app/models/user.rb:15: syntax error, unexpected '\n', expecting =>
+app/controllers/users_controller.rb:23:in `edit'
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 09:59:21 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/_form.html.erb (7.5ms)
+  Rendered users/edit.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_rails_default.html.erb (48.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 80ms (Views: 67.4ms)
+
+
+Started PATCH "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 09:59:28 +0100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ij8m7DL2rU3A8E0ck1/HdrYZrHklaiXrnV0fQUFh2GqgWK5lLH9ELJpcCIolnSRRGrkIpcTZ89YmUdbewaNKrw==", "user"=>{"name"=>"Alex", "email"=>"ajf97@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Guardar cambios", "id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 9ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 09:59:28 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (48.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (2.7ms)
+Completed 200 OK in 94ms (Views: 63.5ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:05:16 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_rails_default.html.erb (2115.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 2141ms (Views: 2132.2ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:05:18 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (46.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 65.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:05:22 +0100
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 16ms
+
+
+  
+ActionController::UnknownFormat (UsersController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:08:47 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 10ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3260536216119872051_70248351394840'
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:09:03 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_rails_default.html.erb (41.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 52.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:09:10 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3260536216119872051_70248325026420'
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:09:18 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:09:19 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:09:30 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:09:31 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:16:41 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:16:41 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:16:42 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:18:04 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:18:04 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:18:05 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:18:11 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:18:13 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:18:21 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:24:27 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:24:27 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:24:28 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:24:31 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:24:34 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:24:51 +0100
+Started PUT "/__web_console/repl_sessions/20b585072621d1564bac885253c140e4" for 127.0.0.1 at 2019-02-28 11:24:52 +0100
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:31:40 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3260536216119872051_70248354336300'
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:31:41 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3260536216119872051_70248186362680'
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:31:43 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3260536216119872051_70248400591720'
+Started PUT "/__web_console/repl_sessions/929c6d84cc312ad16adf0489170c43ad" for 127.0.0.1 at 2019-02-28 11:31:48 +0100
+Started PUT "/__web_console/repl_sessions/929c6d84cc312ad16adf0489170c43ad" for 127.0.0.1 at 2019-02-28 11:31:49 +0100
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:32:16 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 11ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3260536216119872051_70248354613920'
+Started PUT "/__web_console/repl_sessions/2f22b6a626ef820c089bda9cbea187f0" for 127.0.0.1 at 2019-02-28 11:34:44 +0100
+Started PUT "/__web_console/repl_sessions/2f22b6a626ef820c089bda9cbea187f0" for 127.0.0.1 at 2019-02-28 11:34:44 +0100
+Started PUT "/__web_console/repl_sessions/2f22b6a626ef820c089bda9cbea187f0" for 127.0.0.1 at 2019-02-28 11:34:47 +0100
+Started PUT "/__web_console/repl_sessions/2f22b6a626ef820c089bda9cbea187f0" for 127.0.0.1 at 2019-02-28 11:35:07 +0100
+Started PUT "/__web_console/repl_sessions/2f22b6a626ef820c089bda9cbea187f0" for 127.0.0.1 at 2019-02-28 11:35:08 +0100
+Started PUT "/__web_console/repl_sessions/2f22b6a626ef820c089bda9cbea187f0" for 127.0.0.1 at 2019-02-28 11:35:11 +0100
+Started PUT "/__web_console/repl_sessions/2f22b6a626ef820c089bda9cbea187f0" for 127.0.0.1 at 2019-02-28 11:35:11 +0100
+Started PUT "/__web_console/repl_sessions/2f22b6a626ef820c089bda9cbea187f0" for 127.0.0.1 at 2019-02-28 11:35:15 +0100
+Started PUT "/__web_console/repl_sessions/2f22b6a626ef820c089bda9cbea187f0" for 127.0.0.1 at 2019-02-28 11:35:16 +0100
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:35:50 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (407.5ms)
+  Rendered layouts/_rails_default.html.erb (86.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (29.7ms)
+  Rendered layouts/_footer.html.erb (2.0ms)
+Completed 200 OK in 873ms (Views: 541.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:35:53 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 23ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3247033831675317601_69914618604400'
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:35:57 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (58.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 75ms (Views: 74.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:36:00 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 13ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3247033831675317601_69914685846020'
+Started POST "/__web_console/repl_sessions/ffe82a11e2b233840e74253c99b89313/trace" for 127.0.0.1 at 2019-02-28 11:36:13 +0100
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:38:40 +0100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 20ms
+
+
+  
+NoMethodError (undefined method `paginate' for User:Class):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:39:05 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (66.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (3.2ms)
+Completed 200 OK in 89ms (Views: 87.9ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:39:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (50.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 60.9ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-28 11:39:18 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rksDoCQHSJFg2wsAo4pHSNwzCa3bTV5lHRPobd2jWS4sLIspOo6h8Dp3TpYVSKRvcJOtcTr+iFimHyHyXWHL6w=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:39:18 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_rails_default.html.erb (54.0ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (5.9ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 72ms (Views: 71.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-28 11:39:20 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (746.0ms)
+  Rendered layouts/_rails_default.html.erb (32.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 789ms (Views: 788.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-28 11:39:28 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hIqh8jch7IHRk8JzNCHZasQmly6GtDIXt+E+8CYf3+D53LQSH5Hq0I/5YuFNVCyPUYkR3bEa01uz0x7BRLyu/Q==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (58.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 178ms (Views: 67.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-28 11:39:34 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z8Ki+9l1Sw2fvplvFGSIzxp1uNKRDiKArYIthHGwbHHlpSpyx/yibMUS3PmipmvottUcDnC99L0WjuQb8XL+tA==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 83ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:39:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_rails_default.html.erb (34.4ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 47ms (Views: 44.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:39:39 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:39:39 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_rails_default.html.erb (35.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 52.3ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:39:46 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:39:46 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_rails_default.html.erb (51.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (8.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 73ms (Views: 71.9ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:39:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_rails_default.html.erb (44.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 59.8ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:39:51 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 11ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:39:51 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (41.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 56ms (Views: 55.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:39:56 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 8ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:39:56 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (39.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (7.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 53.9ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-28 11:40:16 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wEtYfzndveeWm19HaSRiJJe06DSGIIXvDKaFySqJfRNCLND2J1RUhsw3GtHf5oEDOxRM6GeTU9K3qkxWqkvv1g=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:40:16 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (37.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 50.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-28 11:40:18 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (45.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 62ms (Views: 61.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-28 11:40:27 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UQG4cG5jqY7NLbCoM9ZnX42L0s82NGY7Chis/HtHAQksV62QRtOv35NHEDpKo5K6GCRUPAGah3cOKozNGeRwFA==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 162ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:40:27 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_rails_default.html.erb (166.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 182ms (Views: 179.7ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:40:30 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:40:30 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_rails_default.html.erb (37.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 48ms (Views: 47.7ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:43:07 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 23ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:43:07 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_rails_default.html.erb (45.6ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (5.4ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 64ms (Views: 62.8ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:43:10 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 10ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:43:10 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (38.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 53.4ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:46:55 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 23ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:46:55 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_rails_default.html.erb (51.9ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 71ms (Views: 69.3ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:46:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_rails_default.html.erb (70.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (6.0ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 95ms (Views: 91.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:47:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_rails_default.html.erb (47.8ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 63.6ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-02-28 11:47:10 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (65.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.6ms)
+  Rendered layouts/_footer.html.erb (1.9ms)
+Completed 200 OK in 79ms (Views: 78.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:47:12 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_rails_default.html.erb (102.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 117ms (Views: 115.9ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:47:14 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 6ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:47:14 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_rails_default.html.erb (67.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (8.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 87ms (Views: 85.9ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:47:24 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 5ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:47:25 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_rails_default.html.erb (47.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (7.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 63ms (Views: 62.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:48:41 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_rails_default.html.erb (1565.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (11.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1589ms (Views: 1588.6ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-28 11:48:45 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"X78ZXW+RgkPkMM/KnpykLIod8hLKkqXsQYHSyBDpPUXd2JHUcRhrIr6cilwoXkcLJr1Wzishc9H6jRtXkCuvgA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:48:45 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_rails_default.html.erb (73.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 81.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-28 11:48:47 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (81.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.6ms)
+Completed 200 OK in 96ms (Views: 95.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-28 11:48:55 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IH3fQFeImoWuiYsvWjtQgtxvTZQvGX0TPj9swd2rJshdK8qgfzic1PDjK70jTqVnScDLZxi3nF86DUzwvwhX1Q==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 112ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:48:55 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_rails_default.html.erb (50.1ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 61.6ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:49:03 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 6ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:49:03 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_rails_default.html.erb (35.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 50ms (Views: 48.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 11:49:20 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb___3247033831675317601_69914655335180'
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:49:26 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_rails_default.html.erb (32.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 50.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:49:29 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 7ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:49:29 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_rails_default.html.erb (46.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 59ms (Views: 57.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:53:03 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (41.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (44.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 95ms (Views: 94.5ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:53:06 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 9ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:53:06 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_rails_default.html.erb (55.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 70ms (Views: 69.4ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:56:43 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_rails_default.html.erb (56.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 82ms (Views: 73.7ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:56:47 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 10ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:56:47 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_rails_default.html.erb (36.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 47.9ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:56:49 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:56:50 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_rails_default.html.erb (47.2ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 59.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:56:52 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:56:52 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_rails_default.html.erb (47.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 65.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-02-28 11:58:18 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"k4wAzSo86JxPOv47Z26d4OakI4dFZxtQ4NBSuthKA4AR64hENLUB/RWWu63RrH7HSgSHW6TUzW1b3JslWIiRRQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:58:18 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (30.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 42ms (Views: 40.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:58:58 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (364.7ms)
+  Rendered layouts/_rails_default.html.erb (63.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (4.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 699ms (Views: 447.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-02-28 11:59:01 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (455.3ms)
+  Rendered layouts/_rails_default.html.erb (29.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 492ms (Views: 491.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-02-28 11:59:09 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rQ3s/wu5nghtA3FGJGtVw+dtYko3KoX7EP3/YZyMw6Z5cjgABNk+Vpt+ujPgiQQoE4ZjxA4IDq8WLCAjmzomDQ==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 148ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 11:59:10 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (56.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 72ms (Views: 67.7ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 11:59:14 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 9ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 11:59:14 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (31.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 40.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 12:01:38 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_rails_default.html.erb (124.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (6.4ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 146ms (Views: 145.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 12:01:40 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_rails_default.html.erb (42.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (9.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 68.9ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:01:45 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 12:01:45 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_rails_default.html.erb (43.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 59ms (Views: 57.8ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:01:48 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 6ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 12:01:49 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (41.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 52.6ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:01:54 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 11ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 12:01:54 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_rails_default.html.erb (38.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 53ms (Views: 52.6ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 12:01:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_rails_default.html.erb (63.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 80ms (Views: 76.6ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:02:06 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 7ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 12:02:06 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_rails_default.html.erb (37.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 50ms (Views: 49.4ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:04:52 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 20ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-02-28 12:04:52 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_rails_default.html.erb (51.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (8.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 72.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:06:21 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered users/_form.html.erb (5.8ms)
+  Rendered users/edit.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_rails_default.html.erb (80.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (1.4ms)
+Completed 200 OK in 120ms (Views: 103.7ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:08:23 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/_form.html.erb (6.1ms)
+  Rendered users/edit.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_rails_default.html.erb (61.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 95ms (Views: 76.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 12:09:45 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (33.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 57ms (Views: 42.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:09:48 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/_form.html.erb (8.5ms)
+  Rendered users/edit.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_rails_default.html.erb (71.6ms)
+  Rendered layouts/_shim.html.erb (1.5ms)
+  Rendered layouts/_header.html.erb (5.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 111ms (Views: 100.5ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:13:40 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.0ms)
+  Rendered users/_form.html.erb (10.9ms)
+  Rendered users/edit.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_rails_default.html.erb (76.0ms)
+  Rendered layouts/_shim.html.erb (0.8ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 128ms (Views: 101.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 12:13:41 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    2: <h1>All users</h1>
+    3: 
+    4: <ul class="users">
+    5:   <% @users.each do |user| %>
+    6:     <li>
+    7:       <%= gravatar_for user, size: 50 %>
+    8:       <%= link_to user.name, user %>
+  
+app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb__3029295891675999969_69978108446040'
+Started GET "/users" for 127.0.0.1 at 2019-02-28 12:50:29 +0100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 15ms
+
+
+  
+NoMethodError (undefined method `paginate' for User:Class):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-02-28 12:50:32 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.6ms)
+  Rendered users/_form.html.erb (4.8ms)
+  Rendered users/edit.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_rails_default.html.erb (27.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 48ms (Views: 42.3ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 12:50:36 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (29.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 54ms (Views: 50.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 12:50:45 +0100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 10ms
+
+
+  
+NoMethodError (undefined method `paginate' for User:Class):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/users" for 127.0.0.1 at 2019-02-28 12:51:03 +0100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 11ms
+
+
+  
+NoMethodError (undefined method `paginate' for User:Class):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/users" for 127.0.0.1 at 2019-02-28 12:51:05 +0100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 8ms
+
+
+  
+NoMethodError (undefined method `paginate' for User:Class):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/users" for 127.0.0.1 at 2019-02-28 12:51:09 +0100
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 12ms
+
+
+  
+NoMethodError (undefined method `paginate' for User:Class):
+  
+app/controllers/users_controller.rb:9:in `index'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 12:56:24 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_rails_default.html.erb (267.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (8.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 613ms (Views: 330.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 12:56:27 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [2 times] (1.1ms)
+  Rendered users/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_rails_default.html.erb (48.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 71.7ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 12:56:34 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (70.7ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (4.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 92ms (Views: 89.2ms)
+
+
+Started GET "/users/5c74297039c97e08f76db2a4" for 127.0.0.1 at 2019-02-28 12:56:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c74297039c97e08f76db2a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_rails_default.html.erb (87.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 102ms (Views: 99.0ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-02-28 12:58:37 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_rails_default.html.erb (61.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (8.3ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 85ms (Views: 81.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 13:14:59 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [2 times] (41.6ms)
+  Rendered users/index.html.erb within layouts/application (50.0ms)
+  Rendered layouts/_rails_default.html.erb (328.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 751ms (Views: 406.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 13:15:02 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [2 times] (1.3ms)
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_rails_default.html.erb (46.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 59.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (533.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (461.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users" for 127.0.0.1 at 2019-02-28 13:17:41 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [2 times] (1.5ms)
+  Rendered users/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_rails_default.html.erb (41.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 52.9ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users" for 127.0.0.1 at 2019-02-28 13:18:32 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (4.8ms)
+  Rendered users/index.html.erb within layouts/application (364.6ms)
+  Rendered layouts/_rails_default.html.erb (24.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 403ms (Views: 396.3ms)
+
+
+Started GET "/users/5c77d17d39c97e4508e9dc40" for 127.0.0.1 at 2019-02-28 13:18:52 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c77d17d39c97e4508e9dc40"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_rails_default.html.erb (34.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 52.6ms)
+
+
+Started GET "/users?page=2" for 127.0.0.1 at 2019-02-28 13:19:25 +0100
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (5.2ms)
+  Rendered users/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_rails_default.html.erb (53.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 100ms (Views: 74.9ms)
+
+
+Started GET "/users?page=3" for 127.0.0.1 at 2019-02-28 13:19:27 +0100
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (12.5ms)
+  Rendered users/index.html.erb within layouts/application (26.1ms)
+  Rendered layouts/_rails_default.html.erb (33.2ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 72.3ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at 2019-02-28 13:19:28 +0100
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [12 times] (19.3ms)
+  Rendered users/index.html.erb within layouts/application (26.4ms)
+  Rendered layouts/_rails_default.html.erb (41.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 78.2ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2019-02-28 13:19:29 +0100
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (6.6ms)
+  Rendered users/index.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_rails_default.html.erb (49.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 76ms (Views: 69.4ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2019-02-28 13:24:53 +0100
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (11.7ms)
+  Rendered users/index.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_rails_default.html.erb (29.3ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 50.3ms)
+
+
+Started DELETE "/users/5c77d17d39c97e4508e9dc43" for 127.0.0.1 at 2019-02-28 13:25:08 +0100
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VeN9p+bV4djH2mDxk8pDyo7EfUviTlqtogwGQKcewPXqco9KNWAhjmgWGAsNpW5bTffmBpOBSfbyu0YF3i8hdg==", "id"=>"5c77d17d39c97e4508e9dc43"}
+Redirected to http://localhost:3000/users
+Completed 302 Found in 6ms
+
+
+Started GET "/users" for 127.0.0.1 at 2019-02-28 13:25:08 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (7.7ms)
+  Rendered users/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_rails_default.html.erb (33.4ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 61ms (Views: 55.7ms)
+
+

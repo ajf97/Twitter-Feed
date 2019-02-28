@@ -18,6 +18,7 @@ gem 'jbuilder',                '2.7.0'
 gem 'mongoid', '~> 7.0'
 gem 'execjs'
 gem 'therubyracer'
+gem "will_paginate_mongoid"
 
 
 group :development, :test do
