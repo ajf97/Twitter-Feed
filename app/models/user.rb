@@ -1,7 +1,5 @@
 class User
 
-  attr_accessor :remember_token
-
   include Mongoid::Document
   include Mongoid::Timestamps
   include ActiveModel::SecurePassword
@@ -10,6 +8,13 @@ class User
   field :password_digest, type: String 
   field :remember_digest, type: String
   field :admin, type: Boolean, default:false
+  field :activation_digest, type: String
+  field :activated, type: Boolean, default: false
+  field :activated_at, type: DateTime 
+
+  attr_accessor :remember_token, :activation_token
+  before_save   :downcase_email
+  before_create :create_activation_digest
 
    # Añadimos contraseña segura para el usuario 
    has_secure_password
@@ -61,7 +66,34 @@ class User
     update_attribute(:remember_digest,nil)
   end
 
+  # Activar cuenta 
+  def activate
+    update_attribute(:activated,    true)
+    update_attribute(:activated_at, Time.zone.now)
+  end
 
+  # Enviar email de activación 
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
+  end
+
+  private
+
+  # Convertimos el correo a minúsculas porque se almacena de esa forma 
+  def downcase_email
+    self.email = email.downcase
+  end
+
+  def create_activation_digest
+    self.activation_token  = User.new_token
+    self.activation_digest = User.digest(activation_token)
+  end
+
+  def authenticated?(attribute, token)
+    digest = send("#{attribute}_digest")
+    return false if digest.nil?
+    BCrypt::Password.new(digest).is_password?(token)
+  end
 
 
 
