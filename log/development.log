@@ -5722,3 +5722,747 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 78ms (Views: 70.1ms)
 
 
+Started GET "/help" for 127.0.0.1 at 2019-03-04 12:37:03 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_rails_default.html.erb (32.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (12.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 51.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-04 12:37:05 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (9.8ms)
+  Rendered users/index.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_rails_default.html.erb (34.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 67ms (Views: 60.6ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-03-04 12:37:09 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_rails_default.html.erb (34.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (10.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 51ms (Views: 50.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-04 12:37:09 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (3.5ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_micropost_form.html.erb (3.3ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (17.7ms)
+  Rendered shared/_feed.html.erb (20.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (33.5ms)
+  Rendered layouts/_rails_default.html.erb (58.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 133ms (Views: 113.5ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 12:37:11 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered collection of microposts/_micropost.html.erb [30 times] (20.6ms)
+  Rendered users/show.html.erb within layouts/application (28.5ms)
+  Rendered layouts/_rails_default.html.erb (39.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 89ms (Views: 81.1ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 12:37:13 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered collection of microposts/_micropost.html.erb [30 times] (15.8ms)
+  Rendered users/show.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_rails_default.html.erb (30.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 73ms (Views: 64.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/help" for 127.0.0.1 at 2019-03-04 20:25:21 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_rails_default.html.erb (3025.3ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (4.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 3292ms (Views: 3111.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-04 20:25:26 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_rails_default.html.erb (131.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 153ms (Views: 152.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-04 20:25:29 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (935.9ms)
+  Rendered layouts/_rails_default.html.erb (149.0ms)
+  Rendered layouts/_shim.html.erb (1.1ms)
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 1117ms (Views: 1110.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-03-04 20:25:38 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vcasv9+Hduy5du/UJTJ3Wvhc0614cG3oXQrZjWVcrYi1VrfO6NCOvbMq+T5fnKyxVc+QB1ShDPEOS23gCl61QQ==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 109ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 20:25:38 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (3.2ms)
+  Rendered users/show.html.erb within layouts/application (73.1ms)
+Completed 500 Internal Server Error in 96ms
+
+
+  
+ActionView::Template::Error (Missing partial users/_follow_form, application/_follow_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ajf97/Escritorio/Twitter-Feed/app/views"
+):
+    12:   </section>
+    13:   </aside>
+    14:   <div class="col-md-8">
+    15:   <%= render 'follow_form' if logged_in? %>
+    16:     <% if @user.microposts.any? %>
+    17:       <h3>Microposts (<%= @user.microposts.count %>)</h3>
+    18:       <ol class="microposts">
+  
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232302359660'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 20:29:42 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (3.9ms)
+  Rendered users/show.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 27ms
+
+
+  
+ActionView::Template::Error (Missing partial users/_follow_form, application/_follow_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ajf97/Escritorio/Twitter-Feed/app/views"
+):
+    12:   </section>
+    13:   </aside>
+    14:   <div class="col-md-8">
+    15:   <%= render 'follow_form' if logged_in? %>
+    16:     <% if @user.microposts.any? %>
+    17:       <h3>Microposts (<%= @user.microposts.count %>)</h3>
+    18:       <ol class="microposts">
+  
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232295933720'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 20:30:40 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (10.0ms)
+  Rendered users/show.html.erb within layouts/application (23.3ms)
+Completed 500 Internal Server Error in 53ms
+
+
+  
+ActionView::Template::Error (Missing partial users/_follow_form, application/_follow_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ajf97/Escritorio/Twitter-Feed/app/views"
+):
+    12:   </section>
+    13:   </aside>
+    14:   <div class="col-md-8">
+    15:   <%= render 'follow_form' if logged_in? %>
+    16:     <% if @user.microposts.any? %>
+    17:       <h3>Microposts (<%= @user.microposts.count %>)</h3>
+    18:       <ol class="microposts">
+  
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232147842560'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 20:30:42 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (9.2ms)
+  Rendered users/show.html.erb within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 43ms
+
+
+  
+ActionView::Template::Error (Missing partial users/_follow_form, application/_follow_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ajf97/Escritorio/Twitter-Feed/app/views"
+):
+    12:   </section>
+    13:   </aside>
+    14:   <div class="col-md-8">
+    15:   <%= render 'follow_form' if logged_in? %>
+    16:     <% if @user.microposts.any? %>
+    17:       <h3>Microposts (<%= @user.microposts.count %>)</h3>
+    18:       <ol class="microposts">
+  
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232306246800'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 20:33:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.5ms)
+  Rendered users/_follow_form.html.erb (0.5ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (20.9ms)
+  Rendered users/show.html.erb within layouts/application (69.4ms)
+  Rendered layouts/_rails_default.html.erb (46.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 138ms (Views: 130.4ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/following" for 127.0.0.1 at 2019-03-04 20:33:12 +0100
+  
+AbstractController::ActionNotFound (The action 'following' could not be found for UsersController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 20:33:15 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (10.7ms)
+  Rendered users/_follow_form.html.erb (0.6ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (16.1ms)
+  Rendered users/show.html.erb within layouts/application (38.9ms)
+  Rendered layouts/_rails_default.html.erb (35.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 90ms (Views: 83.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-04 20:33:22 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (8.7ms)
+  Rendered users/index.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_rails_default.html.erb (53.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 93ms (Views: 82.6ms)
+
+
+Started GET "/users/5c74297039c97e08f76db2a4" for 127.0.0.1 at 2019-03-04 20:33:42 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c74297039c97e08f76db2a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (16.0ms)
+  Rendered users/_follow_form.html.erb (10.2ms)
+  Rendered users/show.html.erb within layouts/application (39.2ms)
+Completed 500 Internal Server Error in 72ms
+
+
+  
+ActionView::Template::Error (Missing partial users/_follow, application/_follow with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/ajf97/Escritorio/Twitter-Feed/app/views"
+):
+    3:   <% if current_user.following?(@user) %>
+    4:     <%= render 'unfollow' %>
+    5:   <% else %>
+    6:     <%= render 'follow' %>
+    7:   <% end %>
+    8:   </div>
+    9: <% end %>
+  
+app/views/users/_follow_form.html.erb:6:in `_app_views_users__follow_form_html_erb__66946444948172915_70232148145460'
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232148060980'
+Started GET "/users/5c74297039c97e08f76db2a4" for 127.0.0.1 at 2019-03-04 20:34:59 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c74297039c97e08f76db2a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (3.8ms)
+  Rendered users/_follow.html.erb (18.0ms)
+  Rendered users/_follow_form.html.erb (21.1ms)
+  Rendered users/show.html.erb within layouts/application (28.7ms)
+Completed 500 Internal Server Error in 38ms
+
+
+  
+ActionView::Template::Error (undefined method `active_relationships' for #<User:0x00007fc0775651a0>
+Did you mean?  activated_previously_changed?):
+    1: <%= form_for(current_user.active_relationships.build) do |f| %>
+    2:     <div><%= hidden_field_tag :followed_id, @user.id %></div>
+    3:     <%= f.submit "Follow", class: "btn btn-primary" %>
+    4:   <% end %>
+  
+app/views/users/_follow.html.erb:1:in `_app_views_users__follow_html_erb___1162803831173073806_70232308283300'
+app/views/users/_follow_form.html.erb:6:in `_app_views_users__follow_form_html_erb__66946444948172915_70232306294860'
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232309707500'
+Started GET "/users/5c74297039c97e08f76db2a4" for 127.0.0.1 at 2019-03-04 20:51:39 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c74297039c97e08f76db2a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.8ms)
+  Rendered users/_follow.html.erb (19.5ms)
+  Rendered users/_follow_form.html.erb (22.4ms)
+  Rendered users/show.html.erb within layouts/application (31.4ms)
+Completed 500 Internal Server Error in 41ms
+
+
+  
+ActionView::Template::Error (undefined method `active_relationships' for #<User:0x00007fc0765996e0>
+Did you mean?  activated_previously_changed?):
+    1: <%= form_for(current_user.active_relationships.build) do |f| %>
+    2:     <div><%= hidden_field_tag :followed_id, @user.id %></div>
+    3:     <%= f.submit "Follow", class: "btn btn-primary" %>
+    4:   <% end %>
+  
+app/views/users/_follow.html.erb:1:in `_app_views_users__follow_html_erb___1162803831173073806_70232298309220'
+app/views/users/_follow_form.html.erb:6:in `_app_views_users__follow_form_html_erb__66946444948172915_70232298030600'
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232297016280'
+Started GET "/users/5c74297039c97e08f76db2a4" for 127.0.0.1 at 2019-03-04 20:51:40 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c74297039c97e08f76db2a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.1ms)
+  Rendered users/_follow.html.erb (18.0ms)
+  Rendered users/_follow_form.html.erb (20.7ms)
+  Rendered users/show.html.erb within layouts/application (28.4ms)
+Completed 500 Internal Server Error in 39ms
+
+
+  
+ActionView::Template::Error (undefined method `active_relationships' for #<User:0x00007fc077798ff8>
+Did you mean?  activated_previously_changed?):
+    1: <%= form_for(current_user.active_relationships.build) do |f| %>
+    2:     <div><%= hidden_field_tag :followed_id, @user.id %></div>
+    3:     <%= f.submit "Follow", class: "btn btn-primary" %>
+    4:   <% end %>
+  
+app/views/users/_follow.html.erb:1:in `_app_views_users__follow_html_erb___1162803831173073806_70232311648180'
+app/views/users/_follow_form.html.erb:6:in `_app_views_users__follow_form_html_erb__66946444948172915_70232307474260'
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232308584940'
+Started GET "/users/5c74297039c97e08f76db2a4" for 127.0.0.1 at 2019-03-04 20:51:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c74297039c97e08f76db2a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.9ms)
+  Rendered users/_follow.html.erb (20.4ms)
+  Rendered users/_follow_form.html.erb (24.4ms)
+  Rendered users/show.html.erb within layouts/application (38.5ms)
+Completed 500 Internal Server Error in 52ms
+
+
+  
+ActionView::Template::Error (undefined method `active_relationships' for #<User:0x00007fc064753f38>
+Did you mean?  activated_previously_changed?):
+    1: <%= form_for(current_user.active_relationships.build) do |f| %>
+    2:     <div><%= hidden_field_tag :followed_id, @user.id %></div>
+    3:     <%= f.submit "Follow", class: "btn btn-primary" %>
+    4:   <% end %>
+  
+app/views/users/_follow.html.erb:1:in `_app_views_users__follow_html_erb___1162803831173073806_70232147989680'
+app/views/users/_follow_form.html.erb:6:in `_app_views_users__follow_form_html_erb__66946444948172915_70232147924760'
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232305137040'
+Started GET "/users/5c74297039c97e08f76db2a4" for 127.0.0.1 at 2019-03-04 20:52:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c74297039c97e08f76db2a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (3.5ms)
+  Rendered users/_follow.html.erb (2.4ms)
+  Rendered users/_follow_form.html.erb (6.3ms)
+  Rendered users/show.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 88ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(current_user.followers) do |f| %>
+    2:     <div><%= hidden_field_tag :followed_id, @user.id %></div>
+    3:     <%= f.submit "Follow", class: "btn btn-primary" %>
+    4:   <% end %>
+  
+app/views/users/_follow.html.erb:1:in `_app_views_users__follow_html_erb___1162803831173073806_70232285033800'
+app/views/users/_follow_form.html.erb:6:in `_app_views_users__follow_form_html_erb__66946444948172915_70232284664940'
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232247972100'
+Started GET "/user" for 127.0.0.1 at 2019-03-04 21:00:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-04 21:00:11 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (3.0ms)
+  Rendered shared/_stats.html.erb (5.7ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_micropost_form.html.erb (29.6ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (17.3ms)
+  Rendered shared/_feed.html.erb (19.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (65.6ms)
+  Rendered layouts/_rails_default.html.erb (39.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 129ms (Views: 118.7ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/following" for 127.0.0.1 at 2019-03-04 21:00:18 +0100
+  
+AbstractController::ActionNotFound (The action 'following' could not be found for UsersController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-04 21:00:21 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (2.3ms)
+  Rendered shared/_stats.html.erb (3.6ms)
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered shared/_micropost_form.html.erb (6.1ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (13.9ms)
+  Rendered shared/_feed.html.erb (15.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (34.6ms)
+  Rendered layouts/_rails_default.html.erb (38.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 80.3ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 21:00:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (7.2ms)
+  Rendered users/_follow_form.html.erb (0.5ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (22.8ms)
+  Rendered users/show.html.erb within layouts/application (44.5ms)
+  Rendered layouts/_rails_default.html.erb (48.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 102.1ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/followers" for 127.0.0.1 at 2019-03-04 21:00:35 +0100
+  
+AbstractController::ActionNotFound (The action 'followers' could not be found for UsersController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-04 21:00:37 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.1ms)
+  Rendered users/_follow_form.html.erb (0.5ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (14.3ms)
+  Rendered users/show.html.erb within layouts/application (33.6ms)
+  Rendered layouts/_rails_default.html.erb (45.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 101ms (Views: 92.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-04 21:00:39 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (8.4ms)
+  Rendered users/index.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_rails_default.html.erb (43.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 68.1ms)
+
+
+Started GET "/users/5c77d17d39c97e4508e9dc42" for 127.0.0.1 at 2019-03-04 21:00:42 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c77d17d39c97e4508e9dc42"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (3.5ms)
+  Rendered users/_follow.html.erb (2.8ms)
+  Rendered users/_follow_form.html.erb (8.1ms)
+  Rendered users/show.html.erb within layouts/application (16.5ms)
+Completed 500 Internal Server Error in 28ms
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(current_user.followers) do |f| %>
+    2:     <div><%= hidden_field_tag :followed_id, @user.id %></div>
+    3:     <%= f.submit "Follow", class: "btn btn-primary" %>
+    4:   <% end %>
+  
+app/views/users/_follow.html.erb:1:in `_app_views_users__follow_html_erb___1162803831173073806_70231948294660'
+app/views/users/_follow_form.html.erb:6:in `_app_views_users__follow_form_html_erb__66946444948172915_70231948264100'
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232305764340'
+Started GET "/users/5c77d17d39c97e4508e9dc42" for 127.0.0.1 at 2019-03-04 21:04:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c77d17d39c97e4508e9dc42"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (3.4ms)
+  Rendered users/_follow.html.erb (404.1ms)
+  Rendered users/_follow_form.html.erb (407.1ms)
+  Rendered users/show.html.erb within layouts/application (415.7ms)
+Completed 500 Internal Server Error in 426ms
+
+
+  
+ActionView::Template::Error (undefined method `user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_user_path' for #<#<Class:0x00007fc076de2180>:0x00007fc0760f8898>):
+    1: <%= form_for(User.all.to_a) do |f| %>
+    2:     <div><%= hidden_field_tag :followed_id, @user.id %></div>
+    3:     <%= f.submit "Follow", class: "btn btn-primary" %>
+    4:   <% end %>
+  
+app/views/users/_follow.html.erb:1:in `_app_views_users__follow_html_erb___1162803831173073806_70232295804580'
+app/views/users/_follow_form.html.erb:6:in `_app_views_users__follow_form_html_erb__66946444948172915_70232295856980'
+app/views/users/show.html.erb:15:in `_app_views_users_show_html_erb__493779123249709033_70232295590120'
+Started GET "/users/5c77d17d39c97e4508e9dc42" for 127.0.0.1 at 2019-03-04 21:09:32 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c77d17d39c97e4508e9dc42"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.4ms)
+  Rendered users/_follow.html.erb (3.6ms)
+  Rendered users/_follow_form.html.erb (6.4ms)
+  Rendered users/show.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_rails_default.html.erb (55.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 91ms (Views: 83.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-04 21:10:03 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (7.5ms)
+  Rendered users/index.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_rails_default.html.erb (45.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 77ms (Views: 65.4ms)
+
+
+Started GET "/users/5c74297039c97e08f76db2a4" for 127.0.0.1 at 2019-03-04 21:10:05 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c74297039c97e08f76db2a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (7.5ms)
+  Rendered users/_follow.html.erb (1.4ms)
+  Rendered users/_follow_form.html.erb (7.7ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (12.2ms)
+  Rendered users/show.html.erb within layouts/application (41.5ms)
+  Rendered layouts/_rails_default.html.erb (49.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 112ms (Views: 104.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-04 21:10:17 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (12.0ms)
+  Rendered users/index.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_rails_default.html.erb (62.4ms)
+  Rendered layouts/_shim.html.erb (7.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 110ms (Views: 104.5ms)
+
+

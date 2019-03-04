@@ -15,6 +15,9 @@ class User
   field :reset_sent_at, type: DateTime 
 
   has_many :microposts, dependent: :destroy
+  has_and_belongs_to_many :followers, :class_name => 'User', :inverse_of => :following
+  has_and_belongs_to_many :following, :class_name => 'User', :inverse_of => :followers
+
 
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
@@ -103,6 +106,21 @@ class User
   def feed
     #Micropost.where("user_id = ?" => id)
     microposts
+  end
+
+  # Seguir a un usuario 
+  def follow(other_user)
+    following << other_user
+  end
+
+  # Dejar de seguir a un usuario 
+  def unfollow(other_user)
+    following.delete(other_user)
+  end
+
+  # Comprobar si un usuario sigue a otro 
+  def following?(other_user)
+    following.include?(other_user)
   end
 
 
