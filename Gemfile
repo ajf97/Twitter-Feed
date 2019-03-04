@@ -19,6 +19,7 @@ gem 'mongoid', '~> 7.0'
 gem 'execjs'
 gem 'therubyracer'
 gem "will_paginate_mongoid"
+gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 
 
 group :development, :test do
