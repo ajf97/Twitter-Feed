@@ -105,8 +105,12 @@ class User
   # Crear el feed del usuario 
 
   def feed
-    #Micropost.where("user_id = ?" => id)
-    microposts
+    #Seleccionamos los micropost de los usuarios seguidos (incluido el usuario que sigue)
+    #microposts
+    Micropost.where({
+        "$or" => [
+            {user_id: {:$in => User.find_by(_id: id).following_ids}},
+            {user_id: id}]}) 
   end
 
   # Seguir a un usuario 
