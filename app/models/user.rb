@@ -15,9 +15,10 @@ class User
   field :reset_sent_at, type: DateTime 
 
   has_many :microposts, dependent: :destroy
+
+  # Establecemos una relación muchos a muchos para implementar el seguimiento de usuarios
   has_and_belongs_to_many :followers, :class_name => 'User', :inverse_of => :following
   has_and_belongs_to_many :following, :class_name => 'User', :inverse_of => :followers
-
 
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save   :downcase_email
@@ -110,17 +111,19 @@ class User
 
   # Seguir a un usuario 
   def follow(other_user)
-    following << other_user
+    self.following << other_user # Añadimos al vector de following al usuario actual 
+    other_user.followers << self # Añadimos en los seguidores del usuario a seguir al usuario actual
   end
 
   # Dejar de seguir a un usuario 
   def unfollow(other_user)
-    following.delete(other_user)
+    self.following.delete(other_user)
+    other_user.followers.delete(self)
   end
 
   # Comprobar si un usuario sigue a otro 
   def following?(other_user)
-    following.include?(other_user)
+    self.following.include?(other_user)
   end
 
 

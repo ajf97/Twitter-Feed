@@ -1,4 +1,4 @@
-<%= form_for(current_user.following.find_by(following_id: @user.id),
-             html: { method: :delete }) do |f| %>
-  <%= f.submit "Unfollow", class: "btn" %>
+<%= form_tag "/unfollow", method: :delete , remote: true do %>
+  <div><%= hidden_field_tag :user_id, @user.id %></div>
+  <%= submit_tag "Unfollow", data: {disable_with: 'Unfollow...'}, class: "btn btn-d" %>
 <% end %>
