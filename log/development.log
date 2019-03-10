@@ -12345,3 +12345,1037 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 519ms (Views: 492.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-10 09:29:07 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3293.8ms)
+  Rendered layouts/_rails_default.html.erb (1102.1ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 4999ms (Views: 4496.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-10 09:40:28 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (996.9ms)
+  Rendered layouts/_rails_default.html.erb (63.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 1205ms (Views: 1069.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-03-10 09:40:36 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zVbls2FaK67SqOaCl+ME8h7xGjGo7YlddGWPpH+2IlD2lKckOEn6gkGcqxsdN3nfZ75kAmO8atxYYzNsdTYWgg==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 347ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-10 09:40:37 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (3.4ms)
+  Rendered users/_follow_form.html.erb (0.5ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (15.8ms)
+  Rendered users/show.html.erb within layouts/application (50.9ms)
+  Rendered layouts/_rails_default.html.erb (47.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 246ms (Views: 104.7ms)
+
+
+Started DELETE "/microposts/5c8179f939c97e0a6bcca968" for 127.0.0.1 at 2019-03-10 09:40:44 +0100
+Processing by MicropostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gw/Jz+gG4LuyIUNRl8nXGEHFsSfSUJFUCmCAv340CbuGVcJ+9IJfIJjfU1YerTWWbT3VczWPMWXXwZLSI0vtpA==", "id"=>"5c8179f939c97e0a6bcca968"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 53ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-10 09:40:44 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (6.1ms)
+  Rendered users/_follow_form.html.erb (0.5ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (16.3ms)
+  Rendered users/show.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_rails_default.html.erb (35.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 81.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 09:40:52 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (2.7ms)
+  Rendered shared/_stats.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered shared/_micropost_form.html.erb (45.4ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (72.3ms)
+  Rendered shared/_feed.html.erb (74.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (181.5ms)
+  Rendered layouts/_rails_default.html.erb (35.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 265ms (Views: 223.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 09:41:04 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (22.4ms)
+  Rendered users/index.html.erb within layouts/application (137.7ms)
+  Rendered layouts/_rails_default.html.erb (47.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 410ms (Views: 199.4ms)
+
+
+Started GET "/users/5c77d17d39c97e4508e9dc41" for 127.0.0.1 at 2019-03-10 09:41:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c77d17d39c97e4508e9dc41"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.1ms)
+  Rendered users/_follow.html.erb (0.8ms)
+  Rendered users/_follow_form.html.erb (30.1ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (18.8ms)
+  Rendered users/show.html.erb within layouts/application (60.6ms)
+  Rendered layouts/_rails_default.html.erb (43.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 125ms (Views: 111.3ms)
+
+
+Started POST "/follow" for 127.0.0.1 at 2019-03-10 09:41:10 +0100
+Processing by RelationshipsController#create as JS
+  Parameters: {"utf8"=>"✓", "user_id"=>"5c77d17d39c97e4508e9dc41", "commit"=>"Follow"}
+  Rendering relationships/create.js.erb
+  Rendered users/_unfollow.html.erb (1.5ms)
+  Rendered relationships/create.js.erb (394.2ms)
+Completed 200 OK in 515ms (Views: 396.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 09:41:12 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (3.3ms)
+  Rendered shared/_stats.html.erb (8.3ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_micropost_form.html.erb (4.6ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (131.8ms)
+  Rendered shared/_feed.html.erb (134.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (159.1ms)
+  Rendered layouts/_rails_default.html.erb (55.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 250ms (Views: 233.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 09:41:36 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (17.8ms)
+  Rendered users/index.html.erb within layouts/application (25.8ms)
+  Rendered layouts/_rails_default.html.erb (56.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 113ms (Views: 99.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-03-10 09:41:39 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_rails_default.html.erb (54.0ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (4.3ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 81ms (Views: 67.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 09:41:41 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (8.3ms)
+  Rendered shared/_stats.html.erb (6.2ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_micropost_form.html.erb (4.4ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (156.6ms)
+  Rendered shared/_feed.html.erb (160.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (185.4ms)
+  Rendered layouts/_rails_default.html.erb (46.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 259ms (Views: 241.1ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-10 09:41:45 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (11.2ms)
+  Rendered users/_follow_form.html.erb (1.5ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (38.7ms)
+  Rendered users/show.html.erb within layouts/application (66.5ms)
+  Rendered layouts/_rails_default.html.erb (68.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 167ms (Views: 153.2ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/edit" for 127.0.0.1 at 2019-03-10 09:41:48 +0100
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered users/_form.html.erb (3.8ms)
+  Rendered users/edit.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_rails_default.html.erb (52.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 104ms (Views: 75.7ms)
+
+
+Started PATCH "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-10 09:42:01 +0100
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"atHEpBLRV1Lhhs506itI/melIw0WgaqbiWM6K4PBnEsC3IkJDvIbc1C9wBk1KnheZU3cKAimWReIMJ0yl1zfpg==", "user"=>{"name"=>"Alejandro", "email"=>"ajf97@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Guardar cambios", "id"=>"5c6fd72239c97e1125c0fbe6"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 8ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-10 09:42:01 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.3ms)
+  Rendered users/_follow_form.html.erb (0.5ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (19.8ms)
+  Rendered users/show.html.erb within layouts/application (32.7ms)
+  Rendered layouts/_rails_default.html.erb (33.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 72.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2019-03-10 09:42:18 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"R+ZAa8Q7ws2LG3juw2gheqkGgUAKbZ6xJDCkKLaYjx/avEva2L99VqHlaOlKDMP0hf7lFO2yPoD5kbZF6+drAA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 09:42:18 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_rails_default.html.erb (39.9ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 49ms (Views: 48.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2019-03-10 09:42:20 +0100
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_rails_default.html.erb (46.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 255ms (Views: 57.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-03-10 09:43:09 +0100
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QYIpYl3P60tJtgtLKpkigg/c73lp4IkLgEr3A7GqpaAKMGGrmV6/RdYdmtCuGffz3ExjdlA0zmTt/IdTMIK5/Q==", "user"=>{"name"=>"Alejandro ", "email"=>"infotecnoajf97@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Crear mi cuenta"}
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (4.7ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.6ms)
+UserMailer#account_activation: processed outbound mail in 318.6ms
+Sent mail to infotecnoajf97@gmail.com (13.2ms)
+Date: Sun, 10 Mar 2019 09:43:11 +0100
+From: noreply@example.com
+To: infotecnoajf97@gmail.com
+Message-ID: <5c84ce1f459f5_7e32b0dbb63f13480e2@ajf97-VirtualBox.mail>
+Subject: =?UTF-8?Q?Activaci=C3=B3n_de_la_cuenta?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5c84ce1f435a0_7e32b0dbb63f13479ae";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5c84ce1f435a0_7e32b0dbb63f13479ae
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi Alejandro ,
+
+Welcome to the Sample App! Click on the link below to activate your account:
+
+http://localhost:3000/account_activations/UovQNkI5IHjtohhA5qNtuA/edit?email=infotecnoajf97%40gmail.com
+
+----==_mimepart_5c84ce1f435a0_7e32b0dbb63f13479ae
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Sample App</h1>
+
+<p>Hi Alejandro ,</p>
+
+<p>
+Welcome to the Sample App! Click on the link below to activate your account:
+</p>
+
+<a href="http://localhost:3000/account_activations/UovQNkI5IHjtohhA5qNtuA/edit?email=infotecnoajf97%40gmail.com">Activate</a>
+  </body>
+</html>
+
+----==_mimepart_5c84ce1f435a0_7e32b0dbb63f13479ae--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1399ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 09:43:11 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_rails_default.html.erb (81.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 97ms (Views: 93.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-10 09:46:38 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_rails_default.html.erb (125.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 141ms (Views: 139.6ms)
+
+
+Started GET "/rails/mailers/user_mailer/account_activation.txt" for 127.0.0.1 at 2019-03-10 09:55:45 +0100
+Processing by Rails::MailersController#preview as TEXT
+  Parameters: {"path"=>"user_mailer/account_activation"}
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (2.5ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.6ms)
+UserMailer#account_activation: processed outbound mail in 17.8ms
+  Rendering /home/ajf97/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/railties-5.1.6/lib/rails/templates/rails/mailers/email.html.erb
+  Rendered /home/ajf97/.rbenv/versions/2.6.0/lib/ruby/gems/2.6.0/gems/railties-5.1.6/lib/rails/templates/rails/mailers/email.html.erb (2.8ms)
+Completed 200 OK in 66ms (Views: 34.4ms)
+
+
+Started GET "/rails/mailers/user_mailer/account_activation.txt?part=text%2Fplain" for 127.0.0.1 at 2019-03-10 09:55:45 +0100
+Processing by Rails::MailersController#preview as TEXT
+  Parameters: {"part"=>"text/plain", "path"=>"user_mailer/account_activation"}
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (1.4ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.4ms)
+UserMailer#account_activation: processed outbound mail in 15.1ms
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 26ms (Views: 6.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-03-10 10:02:50 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pTILHGAxtwYCTPRhsHwGr4LotPv1rGCjE60Pc4vQaRKe8EmLOSJmKpF4ufg6qHuC+6fKyD79gyI/q7O7gVBdwA==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_rails_default.html.erb (31.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 155ms (Views: 40.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-03-10 10:02:57 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IuzcMz/QxuhfXNwqIHXUH4dxFEyuI+RnZev+wRe+Yn2/tteCI1R5c3WizC2pETaRq4lwGEn8RFa4SuysSsGGYg==", "session"=>{"email"=>"ajf97@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c6fd72239c97e1125c0fbe6
+Completed 302 Found in 103ms
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6" for 127.0.0.1 at 2019-03-10 10:02:57 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (7.2ms)
+  Rendered users/_follow_form.html.erb (0.5ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (16.9ms)
+  Rendered users/show.html.erb within layouts/application (37.7ms)
+  Rendered layouts/_rails_default.html.erb (78.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 132ms (Views: 123.8ms)
+
+
+Started GET "/users/5c6fd72239c97e1125c0fbe6/following" for 127.0.0.1 at 2019-03-10 10:03:06 +0100
+Processing by UsersController#following as HTML
+  Parameters: {"id"=>"5c6fd72239c97e1125c0fbe6"}
+  Rendering users/show_follow.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (5.6ms)
+  Rendered collection of users/_user.html.erb [4 times] (3.1ms)
+  Rendered users/show_follow.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_rails_default.html.erb (53.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 105ms (Views: 97.3ms)
+
+
+Started GET "/users/5c77d17d39c97e4508e9dc3f" for 127.0.0.1 at 2019-03-10 10:03:08 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c77d17d39c97e4508e9dc3f"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (5.5ms)
+  Rendered users/_unfollow.html.erb (0.7ms)
+  Rendered users/_follow_form.html.erb (7.2ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (16.5ms)
+  Rendered users/show.html.erb within layouts/application (44.4ms)
+  Rendered layouts/_rails_default.html.erb (59.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 130ms (Views: 115.8ms)
+
+
+Started DELETE "/unfollow" for 127.0.0.1 at 2019-03-10 10:03:13 +0100
+Processing by RelationshipsController#destroy as JS
+  Parameters: {"utf8"=>"✓", "user_id"=>"5c77d17d39c97e4508e9dc3f", "commit"=>"Unfollow"}
+  Rendering relationships/destroy.js.erb
+  Rendered users/_follow.html.erb (0.6ms)
+  Rendered relationships/destroy.js.erb (3.0ms)
+Completed 200 OK in 73ms (Views: 4.5ms)
+
+
+Started POST "/follow" for 127.0.0.1 at 2019-03-10 10:03:14 +0100
+Processing by RelationshipsController#create as JS
+  Parameters: {"utf8"=>"✓", "user_id"=>"5c77d17d39c97e4508e9dc3f", "commit"=>"Follow"}
+  Rendering relationships/create.js.erb
+  Rendered users/_unfollow.html.erb (0.6ms)
+  Rendered relationships/create.js.erb (2.9ms)
+Completed 200 OK in 15ms (Views: 4.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:00:25 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (827.8ms)
+  Rendered layouts/_rails_default.html.erb (713.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 1846ms (Views: 1625.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-10 11:00:30 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (548.5ms)
+  Rendered layouts/_rails_default.html.erb (57.9ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 722ms (Views: 616.8ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-03-10 11:01:09 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q0BXJkh4nxLMUfvVqCMYWDKQ8BKP2GADWSOKIgAfw9xgR9gEE2ggTgOWzb9/Ae2DvGq06xNYc0yhf4b/Nn/fzg==", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c84dffe39c97e0afbda1ebf
+Completed 302 Found in 127ms
+
+
+Started GET "/users/5c84dffe39c97e0afbda1ebf" for 127.0.0.1 at 2019-03-10 11:01:09 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c84dffe39c97e0afbda1ebf"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (5.9ms)
+  Rendered users/_follow_form.html.erb (0.8ms)
+  Rendered users/show.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_rails_default.html.erb (70.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 174ms (Views: 98.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:01:16 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (5.0ms)
+  Rendered shared/_stats.html.erb (4.2ms)
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered shared/_micropost_form.html.erb (27.8ms)
+  Rendered shared/_feed.html.erb (0.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (72.4ms)
+  Rendered layouts/_rails_default.html.erb (46.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 133ms (Views: 124.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 11:01:31 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (8.1ms)
+  Rendered users/index.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_rails_default.html.erb (43.0ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+Completed 200 OK in 94ms (Views: 77.3ms)
+
+
+Started GET "/users/5c84dfff39c97e0afbda1ec0" for 127.0.0.1 at 2019-03-10 11:01:33 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c84dfff39c97e0afbda1ec0"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (8.3ms)
+  Rendered users/_follow.html.erb (0.9ms)
+  Rendered users/_follow_form.html.erb (31.1ms)
+  Rendered users/show.html.erb within layouts/application (45.5ms)
+  Rendered layouts/_rails_default.html.erb (47.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 104ms (Views: 98.9ms)
+
+
+Started POST "/follow" for 127.0.0.1 at 2019-03-10 11:01:38 +0100
+Processing by RelationshipsController#create as JS
+  Parameters: {"utf8"=>"✓", "user_id"=>"5c84dfff39c97e0afbda1ec0", "commit"=>"Follow"}
+  Rendering relationships/create.js.erb
+  Rendered users/_unfollow.html.erb (0.8ms)
+  Rendered relationships/create.js.erb (9.1ms)
+Completed 200 OK in 37ms (Views: 13.2ms)
+
+
+Started DELETE "/unfollow" for 127.0.0.1 at 2019-03-10 11:01:39 +0100
+Processing by RelationshipsController#destroy as JS
+  Parameters: {"utf8"=>"✓", "user_id"=>"5c84dfff39c97e0afbda1ec0", "commit"=>"Unfollow"}
+  Rendering relationships/destroy.js.erb
+  Rendered users/_follow.html.erb (0.5ms)
+  Rendered relationships/destroy.js.erb (6.3ms)
+Completed 200 OK in 23ms (Views: 9.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:04:25 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (6.3ms)
+  Rendered shared/_stats.html.erb (4.8ms)
+  Rendered shared/_error_messages.html.erb (3.4ms)
+  Rendered shared/_micropost_form.html.erb (6.4ms)
+  Rendered shared/_feed.html.erb (0.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (22.4ms)
+  Rendered layouts/_rails_default.html.erb (67.5ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 115ms (Views: 101.2ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2019-03-10 11:04:45 +0100
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_rails_default.html.erb (42.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 61ms (Views: 52.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 11:04:46 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (13.3ms)
+  Rendered users/index.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_rails_default.html.erb (79.3ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (2.1ms)
+Completed 200 OK in 126ms (Views: 119.2ms)
+
+
+Started GET "/users/5c84dfff39c97e0afbda1ec0" for 127.0.0.1 at 2019-03-10 11:04:48 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c84dfff39c97e0afbda1ec0"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (6.0ms)
+  Rendered users/_follow.html.erb (0.7ms)
+  Rendered users/_follow_form.html.erb (10.9ms)
+  Rendered users/show.html.erb within layouts/application (25.1ms)
+  Rendered layouts/_rails_default.html.erb (69.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 117ms (Views: 107.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:13:46 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (3.9ms)
+  Rendered shared/_stats.html.erb (5.0ms)
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered shared/_micropost_form.html.erb (5.0ms)
+  Rendered shared/_feed.html.erb (1.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_rails_default.html.erb (60.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 117ms (Views: 96.2ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2019-03-10 11:13:50 +0100
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oOaJzt1Zj4qfQz+Pakk0A5GYU04ylqCjrWdarNN8zQhjzlRCY34tMuDMkdgEvdrqZ3nw5s0hDXxAN46geNwqNA==", "micropost"=>{"content"=>"kk"}, "commit"=>"Post"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:13:50 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (3.2ms)
+  Rendered shared/_stats.html.erb (3.8ms)
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered shared/_micropost_form.html.erb (2.7ms)
+  Rendered collection of microposts/_micropost.html.erb [1 times] (4.4ms)
+  Rendered shared/_feed.html.erb (83.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (96.8ms)
+  Rendered layouts/_rails_default.html.erb (59.6ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 177ms (Views: 168.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:14:02 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (3.5ms)
+  Rendered shared/_stats.html.erb (3.5ms)
+  Rendered shared/_error_messages.html.erb (1.1ms)
+  Rendered shared/_micropost_form.html.erb (3.1ms)
+  Rendered collection of microposts/_micropost.html.erb [1 times] (4.0ms)
+  Rendered shared/_feed.html.erb (5.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (19.7ms)
+  Rendered layouts/_rails_default.html.erb (37.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 74ms (Views: 65.1ms)
+
+
+Started DELETE "/microposts/5c84e35e39c97e0b21621a7b" for 127.0.0.1 at 2019-03-10 11:14:06 +0100
+Processing by MicropostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0A/dA962G4W8mOGt+PnOUhakuoq4TYCKDvRWDk61jnGYOCt2uKg/DAzzA9vrcgm+Ltxu1tGHhaQtmQacRKcZLQ==", "id"=>"5c84e35e39c97e0b21621a7b"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:14:06 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (2.1ms)
+  Rendered shared/_stats.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered shared/_micropost_form.html.erb (2.6ms)
+  Rendered shared/_feed.html.erb (0.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_rails_default.html.erb (67.7ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 96ms (Views: 87.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 11:14:08 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (13.4ms)
+  Rendered users/index.html.erb within layouts/application (19.9ms)
+  Rendered layouts/_rails_default.html.erb (31.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 79ms (Views: 67.3ms)
+
+
+Started GET "/users/5c84dfff39c97e0afbda1ec1" for 127.0.0.1 at 2019-03-10 11:14:10 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c84dfff39c97e0afbda1ec1"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (3.1ms)
+  Rendered users/_unfollow.html.erb (1.3ms)
+  Rendered users/_follow_form.html.erb (9.6ms)
+  Rendered users/show.html.erb within layouts/application (23.2ms)
+  Rendered layouts/_rails_default.html.erb (39.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 86ms (Views: 78.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 11:15:12 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (7.5ms)
+  Rendered users/index.html.erb within layouts/application (521.4ms)
+  Rendered layouts/_rails_default.html.erb (298.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (1.7ms)
+Completed 200 OK in 1142ms (Views: 833.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:15:14 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (2.9ms)
+  Rendered shared/_stats.html.erb (3.2ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_micropost_form.html.erb (10.6ms)
+  Rendered shared/_feed.html.erb (0.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (23.5ms)
+  Rendered layouts/_rails_default.html.erb (37.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (1.3ms)
+Completed 200 OK in 94ms (Views: 72.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:15:18 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (3.8ms)
+  Rendered shared/_stats.html.erb (10.8ms)
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered shared/_micropost_form.html.erb (5.8ms)
+  Rendered shared/_feed.html.erb (0.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (26.5ms)
+  Rendered layouts/_rails_default.html.erb (63.4ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 146ms (Views: 103.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 11:15:22 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (14.8ms)
+  Rendered users/index.html.erb within layouts/application (23.5ms)
+  Rendered layouts/_rails_default.html.erb (47.2ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 96ms (Views: 85.6ms)
+
+
+Started GET "/users/5c84dfff39c97e0afbda1ec0" for 127.0.0.1 at 2019-03-10 11:15:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c84dfff39c97e0afbda1ec0"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.5ms)
+  Rendered users/_follow.html.erb (0.8ms)
+  Rendered users/_follow_form.html.erb (7.7ms)
+  Rendered users/show.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_rails_default.html.erb (51.2ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 82ms (Views: 76.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 11:18:32 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (12.9ms)
+  Rendered users/index.html.erb within layouts/application (17.9ms)
+  Rendered layouts/_rails_default.html.erb (37.5ms)
+  Rendered layouts/_shim.html.erb (2.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 73ms (Views: 66.5ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:28:21 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (272.9ms)
+  Rendered layouts/_rails_default.html.erb (44.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 576ms (Views: 330.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-10 11:28:24 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (414.5ms)
+  Rendered layouts/_rails_default.html.erb (51.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (3.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 477ms (Views: 476.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-03-10 11:28:32 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MuLYAmNMhP7VAFGlYjhpF/R7yIA4V9Usu9iUB47QItsR5VcgOFw7ohrHZ8+1GpzMeoGMeaTXxmNDhJjauLA+yQ==", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_rails_default.html.erb (45.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 160ms (Views: 55.4ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-03-10 11:28:41 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Uw/ytaDyHA5bkVfUBKCahBj8l1VWY+B2RVHUGxlj1KVe8m/sJ3s+YkFpylDmUWGKBsmATyTiq/6eBfCZncYDg==", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c84e6a039c97e0f41d1f6c2
+Completed 302 Found in 92ms
+
+
+Started GET "/users/5c84e6a039c97e0f41d1f6c2" for 127.0.0.1 at 2019-03-10 11:28:41 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c84e6a039c97e0f41d1f6c2"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.8ms)
+  Rendered users/_follow_form.html.erb (0.5ms)
+  Rendered users/show.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_rails_default.html.erb (52.4ms)
+  Rendered layouts/_shim.html.erb (1.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 101ms (Views: 73.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 11:28:57 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (10.3ms)
+  Rendered users/index.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_rails_default.html.erb (46.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 83ms (Views: 70.9ms)
+
+
+Started GET "/users/5c84e6a139c97e0f41d1f6c3" for 127.0.0.1 at 2019-03-10 11:28:59 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c84e6a139c97e0f41d1f6c3"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (4.4ms)
+  Rendered users/_follow.html.erb (1.3ms)
+  Rendered users/_follow_form.html.erb (7.5ms)
+  Rendered users/show.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_rails_default.html.erb (76.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 113ms (Views: 103.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:30:33 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (3.0ms)
+  Rendered shared/_stats.html.erb (3.8ms)
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered shared/_micropost_form.html.erb (4.6ms)
+  Rendered shared/_feed.html.erb (0.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_rails_default.html.erb (49.5ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 92ms (Views: 80.2ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2019-03-10 11:30:36 +0100
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UKMoKbnJR4XsrzZ4bhGW8EhHn2JOh/1i6ofCsKdAvW+Ti/WlB+7lPZMgmC8A5XgZvqY8yrEwUL0H1xa8DOBaUw==", "micropost"=>{"content"=>"afds"}, "commit"=>"Post"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:30:36 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (2.1ms)
+  Rendered shared/_stats.html.erb (4.1ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_micropost_form.html.erb (3.8ms)
+  Rendered collection of microposts/_micropost.html.erb [1 times] (5.7ms)
+  Rendered shared/_feed.html.erb (7.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (25.4ms)
+  Rendered layouts/_rails_default.html.erb (67.7ms)
+  Rendered layouts/_shim.html.erb (1.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 118ms (Views: 106.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2019-03-10 11:32:11 +0100
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [30 times] (10.7ms)
+  Rendered users/index.html.erb within layouts/application (18.7ms)
+  Rendered layouts/_rails_default.html.erb (50.1ms)
+  Rendered layouts/_shim.html.erb (0.9ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 91ms (Views: 82.1ms)
+
+
+Started GET "/users?page=4" for 127.0.0.1 at 2019-03-10 11:32:16 +0100
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  Rendering users/index.html.erb within layouts/application
+  Rendered collection of users/_user.html.erb [10 times] (4.3ms)
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_rails_default.html.erb (74.8ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 100ms (Views: 90.7ms)
+
+
+Started GET "/users/5c84e6ae39c97e0f41d1f725" for 127.0.0.1 at 2019-03-10 11:32:19 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c84e6ae39c97e0f41d1f725"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (5.4ms)
+  Rendered users/_follow.html.erb (0.6ms)
+  Rendered users/_follow_form.html.erb (37.9ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (10.9ms)
+  Rendered users/show.html.erb within layouts/application (70.6ms)
+  Rendered layouts/_rails_default.html.erb (38.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 134ms (Views: 120.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:37:11 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (296.3ms)
+  Rendered layouts/_rails_default.html.erb (87.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 685ms (Views: 404.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2019-03-10 11:37:13 +0100
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (469.5ms)
+  Rendered layouts/_rails_default.html.erb (52.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 537ms (Views: 534.3ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2019-03-10 11:37:23 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Yhp4Hfh6tACZ+ZQ2T2Oz/gf0w+tTdxWa6VzR0e0tG2FBHfc/o2oLXFY+olyYQUYliQ6HEs/3BtURAN0M200Hcw==", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Redirected to http://localhost:3000/users/5c84e8ac39c97e1055dad3a4
+Completed 302 Found in 96ms
+
+
+Started GET "/users/5c84e8ac39c97e1055dad3a4" for 127.0.0.1 at 2019-03-10 11:37:23 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5c84e8ac39c97e1055dad3a4"}
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_stats.html.erb (7.6ms)
+  Rendered users/_follow_form.html.erb (0.5ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (24.3ms)
+  Rendered users/show.html.erb within layouts/application (47.6ms)
+  Rendered layouts/_rails_default.html.erb (78.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 157ms (Views: 137.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-10 11:37:31 +0100
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered shared/_user_info.html.erb (3.2ms)
+  Rendered shared/_stats.html.erb (10.3ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_micropost_form.html.erb (5.3ms)
+  Rendered collection of microposts/_micropost.html.erb [30 times] (101.7ms)
+  Rendered shared/_feed.html.erb (106.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (135.3ms)
+  Rendered layouts/_rails_default.html.erb (38.9ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 215ms (Views: 188.0ms)
+
+
